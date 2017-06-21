@@ -5378,7 +5378,7 @@ ALTER TABLE ONLY countries
     ADD CONSTRAINT country_capital_fkey FOREIGN KEY (capital) REFERENCES cities(id);
 
 ALTER TABLE ONLY countrylanguages
-    ADD CONSTRAINT countrylanguages_countrycode_fkey FOREIGN KEY (countrycode) REFERENCES country(code);
+    ADD CONSTRAINT countrylanguages_countrycode_fkey FOREIGN KEY (countrycode) REFERENCES countries(code);
 
 COMMIT;
 
